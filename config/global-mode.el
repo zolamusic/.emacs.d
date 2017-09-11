@@ -55,33 +55,45 @@
   :init
   (nyan-mode 0))
 
+(use-package hlinum
+  :ensure t
+  :config
+  (progn (hlinum-activate)))
+
 (use-package yaml-mode
   :ensure t)
 
 (add-to-list 'auto-mode-alist '("\\.yaml\\'" . yaml-mode))
 
+(add-hook 'prog-mode-hook 'linum-mode)
+
 (when (fboundp 'windmove-default-keybindings)
   (windmove-default-keybindings))
+
+;;(menu-bar-mode -1)
+;;(tool-bar-mode -1)
+;;(scroll-bar-mode -1)
+
+(defalias 'yes-or-no-p 'y-or-n-p)
+
+(setq inhibit-startup-screen t)
+
+(setq scroll-step 1)
+(setq scroll-conservatively 10000)
+(setq mouse-wheel-scroll-amount '(3 ((shift) . 1)))
+(setq mouse-wheel-progressive-speed nil)
+(setq mouse-wheel-follow-mouse 't)
+
+(setq make-backup-files nil)
 
 (set-language-environment "Korean")
 (prefer-coding-system 'utf-8)
 (global-set-key (kbd "<S-kana>") 'toggle-input-method)
 
-;;(menu-bar-mode -1)
-;;(tool-bar-mode -1)
-
-(defalias 'yes-or-no-p 'y-or-n-p)
-
-(setq scroll-step 1)
-(setq scroll-conservatively 10000)
-(setq make-backup-files nil)
-
 (set-face-attribute 'default nil :family "Fixedsys Excelsior 3.01 L2")
 (set-face-attribute 'default nil :height 120)
 (set-fontset-font t 'hangul (font-spec :name "Neodunggeunmo"))
 (set-face-bold 'bold nil)
-
-(add-hook 'prog-mode-hook 'linum-mode)
 
 (provide 'global-mode)
 ;;; global-mode.el ends here
