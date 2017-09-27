@@ -18,9 +18,7 @@
 (add-to-list 'auto-mode-alist '("\\.inl\\'" . c++-mode))
 
 (use-package srefactor
-  :ensure t
-  :config
-  (semantic-mode 1))
+  :ensure t)
 
 (provide 'c++-mode)
 ;;; c++-mode.el ends here

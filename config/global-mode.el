@@ -18,8 +18,8 @@
 
 (use-package company
   :ensure t
-  :init
-  (add-hook 'prog-mode-hook 'company-mode))
+  :config
+  (global-company-mode))
 
 (use-package doom-themes
   :ensure t
@@ -31,8 +31,8 @@
 
 (use-package flycheck
   :ensure t
-  :init
-  (add-hook 'prog-mode-hook 'flycheck-mode))
+  :config
+  (global-flycheck-mode))
 ;;(add-hook 'c++-mode-hook
 ;;	  (lambda() (setq flycheck-clang-language-standard "c++14")))
 

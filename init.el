@@ -20,7 +20,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (clojure-mode-extra-font-locking cider clojure-mode yaml-mode markdown-mode rtags flycheck-rtags ivy-rtags company-rtags cmake-ide cmake-mode intero haskell-mode rainbow-delimiters smartparens srefactor nyan-mode neotree magit company flycheck ivy smex doom-themes))))
+    (flycheck-clojure clojure-mode-extra-font-locking cider clojure-mode yaml-mode markdown-mode rtags flycheck-rtags ivy-rtags company-rtags cmake-ide cmake-mode intero haskell-mode rainbow-delimiters smartparens srefactor nyan-mode neotree magit company flycheck ivy smex doom-themes))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

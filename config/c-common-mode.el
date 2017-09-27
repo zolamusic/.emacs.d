@@ -10,7 +10,7 @@
 
 (use-package rtags
   :ensure t
-  :bind ("<f5>" . company-rtags)
+  :bind ("C-;" . company-rtags)
   :config
   (setq rtags-path "~/.emacs.d/elpa/rtags-20170919.1345/rtags/bin/")
   (add-hook 'c-mode-common-hook 'rtags-start-process-unless-running)
@@ -35,7 +35,7 @@
 
 (use-package company-rtags
   :ensure t
-  :init
+  :config
   (add-hook 'c-mode-common-hook
 	    (lambda ()
 	      (add-to-list 'company-backends 'company-rtags))))

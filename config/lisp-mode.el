@@ -19,6 +19,12 @@
   :init
   (add-hook 'prog-mode-hook 'rainbow-delimiters-mode))
 
+(use-package scheme
+  :mode
+  (("\\.ss\\'" . scheme-mode)
+   ("\\.scm\\'" . scheme-mode))
+  :ensure t)
+
 (use-package clojure-mode
   :ensure t
   :init
