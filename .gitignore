@@ -1,0 +1,8 @@
+auto-save-list
+elpa
+semanticdb
+cider-history
+smex-items
+srecode-map.el
+*.data
+*~
