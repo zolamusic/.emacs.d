@@ -4,5 +4,6 @@ semanticdb
 cider-history
 smex-items
 srecode-map.el
+tramp
 *.data
 *~
