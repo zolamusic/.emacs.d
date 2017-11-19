@@ -13,6 +13,7 @@
 (load-file "~/.emacs.d/config/c++-mode.el")
 (load-file "~/.emacs.d/config/markdown-mode.el")
 (load-file "~/.emacs.d/config/latex-mode.el")
+(load-file "~/.emacs.d/config/julia-mode.el")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -21,7 +22,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (auctex hlinum flycheck-clojure clojure-mode-extra-font-locking cider clojure-mode yaml-mode markdown-mode rtags flycheck-rtags ivy-rtags company-rtags cmake-ide cmake-mode intero haskell-mode rainbow-delimiters smartparens srefactor nyan-mode neotree magit company flycheck ivy smex doom-themes))))
+    (flycheck-julia julia-repl julia-mode intero auctex hlinum flycheck-clojure clojure-mode-extra-font-locking cider clojure-mode yaml-mode markdown-mode rtags flycheck-rtags ivy-rtags company-rtags cmake-ide cmake-mode haskell-mode rainbow-delimiters smartparens srefactor nyan-mode neotree magit company flycheck ivy smex doom-themes))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

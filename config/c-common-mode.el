@@ -12,7 +12,7 @@
   :ensure t
   :bind ("C-;" . company-rtags)
   :config
-  (setq rtags-path "~/.emacs.d/elpa/rtags-20170919.1345/rtags/bin/")
+  (setq rtags-path "~/.emacs.d/elpa/rtags-20171027.1028/rtags-2.15/bin/")
   (add-hook 'c-mode-common-hook 'rtags-start-process-unless-running)
   (setq rtags-autostart-diagnostics t)
   (setq rtags-completions-enabled t)

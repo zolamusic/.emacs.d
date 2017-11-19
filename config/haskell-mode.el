@@ -2,6 +2,9 @@
 ;;; Commentary:
 ;;; Code:
 
+(use-package intero
+  :ensure t)
+
 (use-package haskell-mode
   :ensure t
   :init

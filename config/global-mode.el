@@ -90,9 +90,16 @@
 (prefer-coding-system 'utf-8)
 (global-set-key (kbd "<S-kana>") 'toggle-input-method)
 
+(global-set-key (kbd "M-<left>") 'shrink-window-horizontally)
+(global-set-key (kbd "M-<right>") 'enlarge-window-horizontally)
+(global-set-key (kbd "M-<down>") 'shrink-window)
+(global-set-key (kbd "M-<up>") 'enlarge-window)
+
 (set-face-attribute 'default nil :family "Fixedsys Excelsior 3.01 L2")
 (set-face-attribute 'default nil :height 120)
-(set-fontset-font t 'hangul (font-spec :name "Neodunggeunmo"))
+(set-fontset-font t 'hangul (font-spec :name "Neodunggeunmo")) ;; 한글폰트조아
+;(setq default-frame-alist '((font . "Neodunggeunmo-12")))
+
 (set-face-bold 'bold nil)
 
 (provide 'global-mode)
