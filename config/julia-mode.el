@@ -5,17 +5,17 @@
 (defvar julia-executable "julia")
 
 (use-package julia-mode
-  :defer t)
+  :ensure t)
 
 (use-package julia-repl-mode
-  :defer t
+  :ensure t
   :init
   (progn
     (setq julia-repl-executable julia-executable)
     (add-hook 'julia-mode-hook 'julia-repl-mode)))
 
 (use-package flycheck-julia
-  :defer t
+  :ensure t
   :init
   (progn
     (setq flycheck-julia-executable julia-executable)
