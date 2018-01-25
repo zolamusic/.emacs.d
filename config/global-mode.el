@@ -21,13 +21,13 @@
   :config
   (global-company-mode))
 
-(use-package doom-themes
-  :ensure t
-  :config
-  (setq doom-themes-enable-bold nil)
-  (setq doom-themes-enable-italic t)
-  (load-theme 'doom-one t)
-  (doom-themes-visual-bell-config))
+;;(use-package doom-themes
+;;  :ensure t
+;;  :config
+;;  (setq doom-themes-enable-bold nil)
+;;  (setq doom-themes-enable-italic t)
+;;  (load-theme 'doom-one t)
+;;  (doom-themes-visual-bell-config))
 
 (use-package flycheck
   :ensure t
