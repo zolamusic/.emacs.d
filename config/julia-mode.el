@@ -7,7 +7,7 @@
 (use-package julia-mode
   :ensure t)
 
-(use-package julia-repl-mode
+(use-package julia-repl
   :ensure t
   :init
   (progn
