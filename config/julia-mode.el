@@ -11,7 +11,7 @@
   :ensure t
   :init
   (progn
-    (setq julia-repl-executable julia-executable)
+;;    (setq julia-repl-executable julia-executable)
     (add-hook 'julia-mode-hook 'julia-repl-mode)))
 
 (use-package flycheck-julia

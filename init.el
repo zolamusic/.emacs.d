@@ -1,10 +1,17 @@
 ;;; package --- Summary
 ;;; Commentary:
 ;;; Code:
-(package-initialize)
+(require 'package)
+
+(setq package-enable-at-startup nil)
 (add-to-list 'package-archives '("gnu" . "https://elpa.gnu.org/packages/"))
 (add-to-list 'package-archives '("marmalade" . "https://marmalade-repo.org/packages/"))
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/"))
+(package-initialize)
+
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
 
 (load-file "~/.emacs.d/config/global-mode.el")
 (load-file "~/.emacs.d/config/lisp-mode.el")
