@@ -30,13 +30,13 @@
 ;;  :config
 ;;  (load-theme 'base16-onedark t))
 
-;;(use-package doom-themes
-;;  :ensure t
-;;  :config
-;;  (setq doom-themes-enable-bold nil)
-;;  (setq doom-themes-enable-italic t)
-;;  (load-theme 'doom-one t)
-;;  (doom-themes-visual-bell-config))
+(use-package doom-themes
+ :ensure t
+ :config
+ (setq doom-themes-enable-bold nil)
+ (setq doom-themes-enable-italic t)
+ (load-theme 'doom-one t)
+ (doom-themes-visual-bell-config))
 
 (use-package flycheck
   :ensure t
@@ -82,7 +82,7 @@
 
 (menu-bar-mode -1)
 (tool-bar-mode -1)
-;;(scroll-bar-mode -1)
+(scroll-bar-mode -1)
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 
@@ -96,18 +96,18 @@
 
 (setq make-backup-files nil)
 
-;;(set-language-environment "Korean")
+(set-language-environment "Korean")
 (prefer-coding-system 'utf-8)
-;;(global-set-key (kbd "<S-kana>") 'toggle-input-method)
+(global-set-key (kbd "<Hangul>") 'toggle-input-method)
 
 (global-set-key (kbd "M-<left>") 'shrink-window-horizontally)
 (global-set-key (kbd "M-<right>") 'enlarge-window-horizontally)
 (global-set-key (kbd "M-<down>") 'shrink-window)
 (global-set-key (kbd "M-<up>") 'enlarge-window)
 
-;(set-face-attribute 'default nil :family "Hack Nerd Font")
-;(set-face-attribute 'default nil :height 120)
-;(set-fontset-font t 'hangul (font-spec :name "Neodunggeunmo")) ;; 한글폰트조아
+(set-face-attribute 'default nil :family "Iosevka Nerd Font")
+(set-face-attribute 'default nil :height 120)
+(set-fontset-font t 'hangul (font-spec :name "Sarasa Term K"))
 ;(setq default-frame-alist '((font . "Neodunggeunmo-12")))
 
 ;(set-face-bold 'bold nil)
